@@ -1,0 +1,344 @@
+numpy/random/bounded_integers.pxd.in has not changed
+numpy/random/mt19937.pyx has not changed
+numpy/random/xoshiro512.pyx has not changed
+numpy/random/philox.pyx has not changed
+numpy/random/bounded_integers.pyx has not changed
+numpy/random/pcg64.pyx has not changed
+numpy/random/mtrand.pyx has not changed
+numpy/random/bounded_integers.pyx.in has not changed
+numpy/random/threefry.pyx has not changed
+numpy/random/entropy.pyx has not changed
+numpy/random/pcg32.pyx has not changed
+numpy/random/xoshiro256.pyx has not changed
+numpy/random/generator.pyx has not changed
+numpy/random/common.pyx has not changed
+Cythonizing sources
+blas_opt_info:
+blas_mkl_info:
+customize UnixCCompiler
+  libraries mkl_rt not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+blis_info:
+customize UnixCCompiler
+  libraries blis not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+openblas_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries openblas not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+atlas_3_10_blas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries tatlas not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+atlas_3_10_blas_info:
+customize UnixCCompiler
+  libraries satlas not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+atlas_blas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+atlas_blas_info:
+customize UnixCCompiler
+  libraries f77blas,cblas,atlas not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+accelerate_info:
+customize UnixCCompiler
+  libraries accelerate not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+Library accelerate was not found. Ignoring
+customize UnixCCompiler
+  libraries veclib not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+Library veclib was not found. Ignoring
+  FOUND:
+    extra_compile_args = ['-msse3', '-I/System/Library/Frameworks/vecLib.framework/Headers']
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3), ('HAVE_CBLAS', None)]
+
+  FOUND:
+    extra_compile_args = ['-msse3', '-I/System/Library/Frameworks/vecLib.framework/Headers']
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3), ('HAVE_CBLAS', None)]
+
+non-existing path in 'numpy/distutils': 'site.cfg'
+lapack_opt_info:
+lapack_mkl_info:
+customize UnixCCompiler
+  libraries mkl_rt not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+openblas_lapack_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries openblas not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+openblas_clapack_info:
+customize UnixCCompiler
+customize UnixCCompiler
+  libraries openblas,lapack not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+flame_info:
+customize UnixCCompiler
+  libraries flame not found in ['/Users/apple/conda/anaconda2/envs/numpy_dev/lib', '/usr/local/lib', '/usr/lib']
+  NOT AVAILABLE
+
+atlas_3_10_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries lapack_atlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib
+customize UnixCCompiler
+  libraries tatlas,tatlas not found in /usr/lib
+<class 'numpy.distutils.system_info.atlas_3_10_threads_info'>
+  NOT AVAILABLE
+
+atlas_3_10_info:
+customize UnixCCompiler
+  libraries lapack_atlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries satlas,satlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib
+customize UnixCCompiler
+  libraries satlas,satlas not found in /usr/lib
+<class 'numpy.distutils.system_info.atlas_3_10_info'>
+  NOT AVAILABLE
+
+atlas_threads_info:
+Setting PTATLAS=ATLAS
+customize UnixCCompiler
+  libraries lapack_atlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib
+customize UnixCCompiler
+  libraries ptf77blas,ptcblas,atlas not found in /usr/lib
+<class 'numpy.distutils.system_info.atlas_threads_info'>
+  NOT AVAILABLE
+
+atlas_info:
+customize UnixCCompiler
+  libraries lapack_atlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries f77blas,cblas,atlas not found in /Users/apple/conda/anaconda2/envs/numpy_dev/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries f77blas,cblas,atlas not found in /usr/local/lib
+customize UnixCCompiler
+  libraries lapack_atlas not found in /usr/lib
+customize UnixCCompiler
+  libraries f77blas,cblas,atlas not found in /usr/lib
+<class 'numpy.distutils.system_info.atlas_info'>
+  NOT AVAILABLE
+
+  FOUND:
+    extra_compile_args = ['-msse3', '-I/System/Library/Frameworks/vecLib.framework/Headers']
+    extra_link_args = ['-Wl,-framework', '-Wl,Accelerate']
+    define_macros = [('NO_ATLAS_INFO', 3), ('HAVE_CBLAS', None)]
+
+non-existing path in 'numpy/random': 'src/splitmix64/splitmix.h'
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building py_modules sources
+building library "npymath" sources
+get_default_fcompiler: matching types: '['gnu95', 'nag', 'absoft', 'ibm', 'intel', 'gnu', 'g95', 'pg']'
+customize Gnu95FCompiler
+Could not locate executable gfortran
+Could not locate executable f95
+customize NAGFCompiler
+customize AbsoftFCompiler
+Could not locate executable f90
+Could not locate executable f77
+customize IBMFCompiler
+Could not locate executable xlf90
+Could not locate executable xlf
+customize IntelFCompiler
+Could not locate executable ifort
+Could not locate executable ifc
+customize GnuFCompiler
+Could not locate executable g77
+customize G95FCompiler
+Could not locate executable g95
+customize PGroupFCompiler
+Could not locate executable pgfortran
+don't know how to compile Fortran code on platform 'posix'
+C compiler: gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64 -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64
+
+compile options: '-Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/Users/apple/conda/anaconda2/envs/numpy_dev/include/python3.6m -c'
+gcc: _configtest.c
+gcc -arch x86_64 _configtest.o -o _configtest
+success!
+removing: _configtest.c _configtest.o _configtest.o.d _configtest
+C compiler: gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64 -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64
+
+compile options: '-Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/Users/apple/conda/anaconda2/envs/numpy_dev/include/python3.6m -c'
+gcc: _configtest.c
+_configtest.c:1:5: warning: incompatible redeclaration of library function 'exp' [-Wincompatible-library-redeclaration]
+int exp (void);
+    ^
+_configtest.c:1:5: note: 'exp' is a builtin with type 'double (double)'
+1 warning generated.
+gcc -arch x86_64 _configtest.o -o _configtest
+success!
+removing: _configtest.c _configtest.o _configtest.o.d _configtest
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath' to include_dirs.
+None - nothing done with h_files = ['build/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath/npy_math_internal.h']
+building library "npysort" sources
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/common' to include_dirs.
+None - nothing done with h_files = ['build/src.macosx-10.7-x86_64-3.6/numpy/core/src/common/npy_sort.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/common/npy_partition.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/common/npy_binsearch.h']
+building extension "numpy.core._dummy" sources
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__multiarray_api.h' to sources.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/config.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__multiarray_api.h']
+building extension "numpy.core._multiarray_tests" sources
+building extension "numpy.core._multiarray_umath" sources
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/config.h' to sources.
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/_numpyconfig.h' to sources.
+executing numpy/core/code_generators/generate_numpy_api.py
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__multiarray_api.h' to sources.
+executing numpy/core/code_generators/generate_ufunc_api.py
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.h' to sources.
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath' to include_dirs.
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath' to include_dirs.
+  adding 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/common' to include_dirs.
+numpy.core - nothing done with h_files = ['build/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath/funcs.inc', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath/simd.inc', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath/loops.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath/matmul.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath/clip.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath/npy_math_internal.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/src/common/templ_common.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/config.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/_numpyconfig.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__multiarray_api.h', 'build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.h']
+building extension "numpy.core._umath_tests" sources
+building extension "numpy.core._rational_tests" sources
+building extension "numpy.core._struct_ufunc_tests" sources
+building extension "numpy.core._operand_flag_tests" sources
+building extension "numpy.fft.pocketfft_internal" sources
+building extension "numpy.linalg.lapack_lite" sources
+  adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+building extension "numpy.linalg._umath_linalg" sources
+  adding 'numpy/linalg/lapack_lite/python_xerbla.c' to sources.
+building extension "numpy.random.entropy" sources
+building extension "numpy.random.mt19937" sources
+building extension "numpy.random.philox" sources
+building extension "numpy.random.threefry" sources
+building extension "numpy.random.xoshiro256" sources
+building extension "numpy.random.xoshiro512" sources
+building extension "numpy.random.pcg64" sources
+building extension "numpy.random.pcg32" sources
+building extension "numpy.random.common" sources
+building extension "numpy.random.generator" sources
+building extension "numpy.random.bounded_integers" sources
+building extension "numpy.random.mtrand" sources
+building data_files sources
+build_src: building npy-pkg config files
+running build_py
+copying numpy/version.py -> build/lib.macosx-10.7-x86_64-3.6/numpy
+copying build/src.macosx-10.7-x86_64-3.6/numpy/__config__.py -> build/lib.macosx-10.7-x86_64-3.6/numpy
+copying build/src.macosx-10.7-x86_64-3.6/numpy/distutils/__config__.py -> build/lib.macosx-10.7-x86_64-3.6/numpy/distutils
+running build_clib
+customize UnixCCompiler
+customize UnixCCompiler using build_clib
+running build_ext
+customize UnixCCompiler
+customize UnixCCompiler using build_ext
+building 'numpy.core._multiarray_umath' extension
+compiling C sources
+C compiler: gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64 -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64
+
+compile options: '-DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DNO_ATLAS_INFO=3 -DHAVE_CBLAS -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/common -Inumpy/core/include -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/Users/apple/conda/anaconda2/envs/numpy_dev/include/python3.6m -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/common -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/common -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath -c'
+extra options: '-msse3 -I/System/Library/Frameworks/vecLib.framework/Headers'
+gcc: numpy/core/src/multiarray/multiarraymodule.c
+In file included from numpy/core/src/multiarray/multiarraymodule.c:76:
+In file included from numpy/core/src/common/umathmodule.h:2:
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:7:19: error: use of undeclared identifier 'PyUFunc_Type'
+        (void *) &PyUFunc_Type,
+                  ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:8:18: error: use of undeclared identifier 'PyUFunc_FromFuncAndData'
+        (void *) PyUFunc_FromFuncAndData,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:9:18: error: use of undeclared identifier 'PyUFunc_RegisterLoopForType'
+        (void *) PyUFunc_RegisterLoopForType,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:10:18: error: use of undeclared identifier 'PyUFunc_GenericFunction'
+        (void *) PyUFunc_GenericFunction,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:11:18: error: use of undeclared identifier 'PyUFunc_f_f_As_d_d'
+        (void *) PyUFunc_f_f_As_d_d,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:12:18: error: use of undeclared identifier 'PyUFunc_d_d'
+        (void *) PyUFunc_d_d,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:13:18: error: use of undeclared identifier 'PyUFunc_f_f'
+        (void *) PyUFunc_f_f,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:14:18: error: use of undeclared identifier 'PyUFunc_g_g'
+        (void *) PyUFunc_g_g,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:15:18: error: use of undeclared identifier 'PyUFunc_F_F_As_D_D'
+        (void *) PyUFunc_F_F_As_D_D,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:16:18: error: use of undeclared identifier 'PyUFunc_F_F'
+        (void *) PyUFunc_F_F,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:17:18: error: use of undeclared identifier 'PyUFunc_D_D'
+        (void *) PyUFunc_D_D,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:18:18: error: use of undeclared identifier 'PyUFunc_G_G'
+        (void *) PyUFunc_G_G,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:19:18: error: use of undeclared identifier 'PyUFunc_O_O'
+        (void *) PyUFunc_O_O,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:20:18: error: use of undeclared identifier 'PyUFunc_ff_f_As_dd_d'
+        (void *) PyUFunc_ff_f_As_dd_d,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:21:18: error: use of undeclared identifier 'PyUFunc_ff_f'
+        (void *) PyUFunc_ff_f,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:22:18: error: use of undeclared identifier 'PyUFunc_dd_d'
+        (void *) PyUFunc_dd_d,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:23:18: error: use of undeclared identifier 'PyUFunc_gg_g'
+        (void *) PyUFunc_gg_g,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:24:18: error: use of undeclared identifier 'PyUFunc_FF_F_As_DD_D'
+        (void *) PyUFunc_FF_F_As_DD_D,
+                 ^
+build/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy/__ufunc_api.c:25:18: error: use of undeclared identifier 'PyUFunc_DD_D'
+        (void *) PyUFunc_DD_D,
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+Running from numpy source directory.
+/Users/apple/conda/anaconda2/envs/numpy_dev/lib/python3.6/distutils/dist.py:261: UserWarning: Unknown distribution option: 'define_macros'
+  warnings.warn(msg)
+error: Command "gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64 -I/Users/apple/conda/anaconda2/envs/numpy_Dev/include -arch x86_64 -DNPY_INTERNAL_BUILD=1 -DHAVE_NPY_CONFIG_H=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -DNO_ATLAS_INFO=3 -DHAVE_CBLAS -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/umath -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/common -Inumpy/core/include -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/include/numpy -Inumpy/core/src/common -Inumpy/core/src -Inumpy/core -Inumpy/core/src/npymath -Inumpy/core/src/multiarray -Inumpy/core/src/umath -Inumpy/core/src/npysort -I/Users/apple/conda/anaconda2/envs/numpy_dev/include/python3.6m -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/common -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/common -Ibuild/src.macosx-10.7-x86_64-3.6/numpy/core/src/npymath -c numpy/core/src/multiarray/multiarraymodule.c -o build/temp.macosx-10.7-x86_64-3.6/numpy/core/src/multiarray/multiarraymodule.o -MMD -MF build/temp.macosx-10.7-x86_64-3.6/numpy/core/src/multiarray/multiarraymodule.o.d -msse3 -I/System/Library/Frameworks/vecLib.framework/Headers" failed with exit status 1
